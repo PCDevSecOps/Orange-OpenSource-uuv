@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complex Table</title>
+    <style>
+        table:not([role=presentation]) tr:first-child th {
+            background-color: red;
+        }
+
+        table:not([role=presentation]) tr:not(:first-child) th:first-child {
+            background-color: green;
+        }
+
+        table:not([role=presentation]) tr:not(:first-child) th:not(:first-child) {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <span id="an-id">An Id</span>
+    <table data-testid="first-table">
+        <caption>
+            Alien football stars
+        </caption>
+        <tr>
+            <th scope="col">Header 1</th>
+            <th>Header 2</th>
+            <th role="rowheader">Header 3</th>
+            <th id="colheader4">Header 4</th>
+            <th scope="row">Header 5</th>
+            <th id="an-id">Header 6</th>
+            <th role="columnheader">Header 7</th>
+        </tr>
+        <tr>
+            <th id="an-id">Td-1-1</th>
+            <td>Td-1-2</td>
+            <th>Td-1-3</th>
+            <td>Td-1-4</td>
+            <td>Td-1-5</td>
+            <td>Td-1-6</td>
+            <td>Td-1-7</td>
+        </tr>
+        <tr>
+            <th scope="row">Td-2-1</th>
+            <td>Td-2-2</td>
+            <td>Td-2-3</td>
+            <th id="an-id">Td-2-4</th>
+            <td>Td-2-5</td>
+            <td>Td-2-6</td>
+            <td>Td-2-7</td>
+        </tr>
+        <tr>
+            <th id="rowheader3">Td-3-1</th>
+            <td>Td-3-2</td>
+            <td>Td-3-3</td>
+            <td>Td-3-4</td>
+            <th role="rowheader">Td-3-5</th>
+            <td>Td-3-6</td>
+            <td>Td-3-7</td>
+        </tr>
+        <tr>
+            <th role="rowheader">Td-4-1</th>
+            <td>Td-4-2</td>
+            <td>Td-4-3</td>
+            <td>Td-4-4</td>
+            <td>Td-4-5</td>
+            <th role="columnheader">Td-4-6</th>
+            <td>Td-4-7</td>
+        </tr>
+        <tr>
+            <th role="columnheader">Td-5-1</th>
+            <td>Td-5-2</td>
+            <td>Td-5-3</td>
+            <td>Td-5-4</td>
+            <td>Td-5-5</td>
+            <td>Td-5-6</td>
+            <th id="another-id">Td-5-7</th>
+        </tr>
+        <tr>
+            <th>Td-6-1</th>
+            <td>Td-6-2</td>
+            <td>Td-6-3</td>
+            <td>Td-6-4</td>
+            <td>Td-6-5</td>
+            <td>Td-6-6</td>
+            <td>Td-6-7</td>
+        </tr>
+        <tr>
+            <th scope="col">Td-7-1</th>
+            <td>Td-7-2</td>
+            <td>Td-7-3</td>
+            <td>Td-7-4</td>
+            <th scope="col">Td-7-5</th>
+            <td>Td-7-6</td>
+            <td>Td-7-7</td>
+        </tr>
+    </table>
+</body>
+</html>
